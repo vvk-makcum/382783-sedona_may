@@ -3,10 +3,113 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<header class="Sedona-header"><!--Начало шапки -->
+  <nav class="sedona-left-nav">  <!--левая навигация -->
+    <ul>
+    <li><a href="#"> информация </a></li>
+    <li><a href="#"> фото и видео </a></li>
+  </ul>
+    </nav>
+  <img class="Sedona-logo" src="#" alt="City of Sedona"> <!--Седона - лого-->
+  <nav class="sedona-right-nav"> <!--правая навигация -->
+    <ul>
+    <li><a href="#"> карта сайта </a></li>
+    <li><a href="#"> гостиницы</a></li>
+    </ul>
+    </nav>
+  <div class="sedona-introimage">   <!--Контейнер для фонового изображения, заголовка и рекламного слогана. ДОРАБОТАТЬ, Прозрачность-->
+    <img class="Sedona-intro" src="#" alt="Sedona Welcome">
+    </div>
+</header>
+<main class="sedona-main">
+  <article class="Sedona-info"> <!--Блок рекламного содержания главной страницы. -->
+    <h2 class="info-slogan"> Седона - небольшой городок в Аризоне, <br> заслуживающий большего </h2>
+    <p class="info-subslogan">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон  </p>
+    <section class="sedona-sectionblock1"> <!-- СЕКЦИЯ 1 С ИЗОБРАЖЕНИЕМ И ТЕКСТАМИ-->
+      <div class="sectionblock1-about"> <!--Секция с текстом-->
+      <h2 class="sectionblock1-slogan"> Настоящий городок</h2>
+      <p class="sectionblock1-text">-№1- <br>
+      Седона - не аттракцион для туристов, <br> там течет своя жизнь </p>
+        </section>
+      </div>
+      <img class="Sectionblock1-image" src="#" alt="Настоящий городок"> <!--Изображение СЕКЦИИ 1-->
+    </section>
+    <section class="sedona-sectionblock2"> <!--СЕКЦИЯ 2 С ЛОГО И ТЕКСТАМИ-->
+      <ul>
+        <li><img src="#" alt="Жилье-logo">
+          <h2 class="sectionblock2-slogan"> Жилье</h2>
+          <P class="Sectionblock2-text"> Рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
+          </li>
+        <li><img src="#" alt="Еда-logo">
+          <h2 class="sectionblock2-slogan"> Еда</h2>
+          <P class="Sectionblock2-text"> Всегда заказывайте фирменный бургер <br> Вы не разочаруетесь!</p>
+          </li>
+        <li><img src="#" alt="Сувениры-logo">
+          <h2 class="sectionblock2-slogan"> Сувениры</h2>
+          <P class="Sectionblock2-text"> не только китайского но и местного <br> производства</p>
+          </li>
+      </ul>
+    <section class="sedona-sectionblock3"> <!--СЕКЦИЯ 3 С ИЗОБРАЖЕНИЕМ И ТЕКСТАМИ-->
+      <img class="Sectionblock3-image" src="#" alt="Мост дьявола"> <!--Изображение СЕКЦИИ 3-->
+      <div class="sectionblock3-about"> <!--Секция с текстом-->
+          <h2 class="sectionblock3-slogan"> Там есть</br> мост дьявола</h2>
+          <p class="sectionblock3-text">-№2- <br>
+            Да, но по нему можно пройти! Если конечно, <br> вы осмелитесь </p>
 
+      </div>
+      </section>
+    <section class="sedona-sectionblock4"> <!--СЕКЦИЯ 4 С ТЕКСТАМИ-->
+        <ul>
+          <li>
+            <h2 class="sectionblock4-slogan"> Небольшая <br> площадь</h2>
+            <P class="Sectionblock4-text"> -№3- <br> все достопримечательности<br>находятся очень близко</p>
+            </li>
+            <h2 class="sectionblock4-slogan"> красивая<br>дорога</h2>
+            <P class="Sectionblock4-text"> -№4-<br>Ехать в сторону Лас-Вегаса совсем <br> не скучно!</p>
+            </li>
+            <h2 class="sectionblock4-slogan"> мало туристов</h2>
+            <P class="Sectionblock4-text"> -№5-<br>Большинство едет в Гранд-Каньон и<br>толпится там</p>
+            </li>
+        </ul>
+    </article>
+  <article class="sedona-hotel"> <!--блок поиска Отеля-->
+    <section class="hotel-text">
+    <h2 class="hotel-slogan"> Заинтересовались?</h2> <!--Вопрос-->
+    <p class="hotel-subslogan"> Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне </h2>
+    </section>
+    <img class="hotel-map" src="#" alt="Карта гостиниц" height="500" width="100%"> <!--Выставил пока примерно-->
+    <form class="hotel-form" action="#" method="post">
+      <h2 class="modalform-head">Поиск гостиницы в седоне</h2>
+      <label>дата заезда<input type="text" name="data-entry" value="24 апреля 2017"></label>
+      <button class="Hotel-entry">выбрать дату</button>
+      <label>дата выезда<input type="text" name="data-exit" value="24 апреля 2017"></label>
+      <button class="Hotel-exit">выбрать дату</button>
+      <label>врослые<button class"minus" type="button" name="adult-minus">-</button><input type="text" name="adult-add" value="1"> <button class="plus" name="adult-plus">+</button></label>
+      <label>дети<button class"minus" type="button" name="child-minus">-</button><input type="text" name="child-add" value="1"> <button class="plus" name="child-plus">+</button></label>
+      <button class"hotel-search" type="button" name="search">найти</button>
+    </form> <!--форма с кнопочками-->
+  </article>
+  <footer class="sedona-footer">
+    </footer>
+    <span>#VISITSEDONA</span>
+    <div class="Social">
+      <a class="social-twitter" href="#">
+      <img class="img-twitter" src="#" alt="twitter"> </a>
+      <a class="social-facebook" href="#">
+      <img class="img-facebook" src="#" alt="facebook"> </a>
+      <a class="social-youtube" href="#">
+      <img class="img-youtube" src="#" alt="twitter"> </a>
+      </div>
+      <a class="createdby" href="https://htmlacademy.ru/intensive/htmlcss">
+      <img class="createdby-logo" alt="HtmlAcademy">
+  </footer>
+</main>
   </body>
 </html>
+
+
+
+<!-- H2 и H3 - задать размер и шрифт, цвет указывать через селетор класса>
