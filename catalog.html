@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <header class="main-header">
         <ul class="left-navigation">
             <li>
-            <a class="info-nav nav" href="#"> информация</a>
+                <a class="info-nav nav" href="#"> информация</a>
             </li>
             <li>
-            <a class="fotovideo-nav nav" href="#"> фото и видео</a>
+                <a class="fotovideo-nav nav" href="#"> фото и видео</a>
             </li>
         </ul>
-        <a class="image-nav"><img class="sedona-logo" src="#" alt="City of Sedona">
+        <a class="image-nav"><img class="sedona-logo" src="img/main_logo.png" width="138" height="70" alt="City of Sedona">
         </a>
         <ul class="right-navigation">
             <li><a class="sitemap-nav nav" href="#"> карта сайта</a>
@@ -24,30 +27,31 @@
         </ul>
     </header>
     <main class="main content">
-        <form class="Hotels-filter" method="get" action="#">
+        <form class="hotels-filter" method="get" action="#">
+            <img class="hotels-filter-background" src="img/background_catalog.jpg" width="1200" height="217" alt="sedona-hotels">
             <fieldset class="hotels-infrastructure">
                 <legend class="filter-caption">инфраструктура</legend>
                 <label>
                     <input type="checkbox" class="pool filter-items" name="pool" checked> бассейн
-                    </label>
+                </label>
                 <label>
                     <input type="checkbox" class="parking filter-items" name="parking"> парковка
-                    </label>
+                </label>
                 <label>
                     <input type="checkbox" class="wifi filter-items" name="wifi"> wi-fi
-                    </label>
+                </label>
             </fieldset>
             <fieldset class="hotels-type">
                 <legend class="filter-caption">тип жилья:</legend>
                 <label>
                     <input type="checkbox" class="type-hotel filter-items" name="hotel" checked> гостиница
-                    </label>
+                </label>
                 <label>
                     <input type="checkbox" class="type-motel filter-items" name="motel" checked> мотель
-                    </label>
+                </label>
                 <label>
                     <input type="checkbox" class="type-apartments filter-items" name="apartments" checked> апартаменты
-                    </label>
+                </label>
             </fieldset>
             <fieldset class="hotel-price">
                 <legend class="filter-caption">стоимость в сутки(р):</legend>
@@ -64,23 +68,21 @@
             </fieldset>
             <section class="hotels-results">
                 <div class="results-sort">
-                    <p class="hotels-result-caption-1">найдено:3</p>
+                    <h3 class="hotels-result-caption-1">найдено:3</h3>
                     <p class="hotels-tesult-caption-2">сортировка:</p>
                     <div class="sort">
-                        <a class="sort-price" href="#">по цене</a>
-                        <a class="sort-type" href="#">по типу</a>
-                        <a class="sort-price" href="#">по рейтингу</a>
+                        <a class="results-sort-by results-sort-by-selected" href="#">по цене</a>
+                        <a class="results-sort-by" href="#">по типу</a>
+                        <a class="results-sort-by" href="#">по рейтингу</a>
                     </div>
                 </div>
                 <div class="sort-view">
-                    <a class="ascend" href="#"><img class="ascend-img" src="#" alt="по возрастанию">
-                    </a>
-                    <a class="descend" href="#"><img class="descend-img" src="#" alt="по убыванию">
-                    </a>
+                    <a class="ascend" href="#"><img class="ascend-img" src="#" alt="по возрастанию"></a>
+                    <a class="descend" href="#"><img class="descend-img" src="#" alt="по убыванию"></a>
                 </div>
                 <article class="hotel-card">
                     <div class="hotel-card-image">
-                        <img src="#" alt="Amara Resort &amp; spa">
+                        <img src="img/hotel-card-amara-resort.jpg" width="135" height="90" alt="Amara Resort &amp; spa">
                     </div>
                     <div class="hotel-card-info">
                         <h3 class="hotel-card-title">amara resort &amp; spa</h3>
@@ -98,7 +100,7 @@
                 </article>
                 <article class="hotel-card">
                     <div class="hotel-card-image">
-                        <img src="#" alt="Desert quail inn">
+                        <img src="img/hotel-card-desert-quailinn.jpg" width="135" height="90" alt="desert quail inn">
                     </div>
                     <div class="hotel-card-info">
                         <h3 class="hotel-card-title">desert quail inn</h3>
@@ -116,7 +118,7 @@
                 </article>
                 <article class="hotel-card">
                     <div class="hotel-card-image">
-                        <img src="#" alt="Amara Resort &amp; spa">
+                        <img src="img/hotel-card-villas-at-poco-diablo.jpg" width="135" height="90" alt="villas at poco diablo">
                     </div>
                     <div class="hotel-card-info">
                         <h3 class="hotel-card-title">villas at poco diablo</h3>
@@ -134,7 +136,7 @@
                 </article>
             </section>
             <footer class="main-footer">
-                <span class="hashtag">#visitsedona</span>
+                <h3 class="hashtag">#visitsedona</h3>
                 <div class="social">
                     <a class="social-twitter" href="#">
                         <img class="img-twitter" src="#" alt="twitter">
@@ -147,14 +149,15 @@
                     </a>
                 </div>
                 <div class="website-creator">
-                <span class="website-creator-name">website by</span>
-                <a class="website-creator-link" href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img class="website-creator-img" alt="htmlacademy">
-                </a>    
-                 </div>   
-                
+                    <span class="website-creator-name">website by</span>
+                    <a class="website-creator-link" href="https://htmlacademy.ru/intensive/htmlcss">
+                        <img class="website-creator-img" src="img/htmlacademy_logo.png" width="113" height="39" alt="htmlacademy">
+                    </a>
+                </div>
+
             </footer>
         </form>
     </main>
 </body>
+
 </html>
